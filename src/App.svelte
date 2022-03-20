@@ -2,8 +2,9 @@
 	import { onMount } from "svelte"
 	import { setup } from "./scripts"
 
+	setup()
+
 	onMount(() => {
-		setup()
 	})
 </script>
 
