@@ -10,3 +10,4 @@ const themes: ThemeSets = {
 }
 
 export default themes
+export { themes, ThemeSets }

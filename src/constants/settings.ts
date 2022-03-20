@@ -15,7 +15,7 @@ const settings: SettingsSets = {
 
         // ASCII Control
         "tree_symbols": {
-            default: asciiSymbols.Default,
+            default: "Default",
             title: "Tree Characters",
             selection: Object.keys(asciiSymbols)
         },
@@ -37,17 +37,18 @@ const settings: SettingsSets = {
             title: "Use icons for folders and files",
         },
         "icons": {
-            default: icons.Default,
+            default: "Default",
             title: "Icon Set",
             selection: Object.keys(icons)
         },
 
         // Editor Look
         "theme": {
-            default: themes.Github,
+            default: "Github Light",
             title: "Theme",
             selection: Object.keys(themes)
         }
 }
 
 export default settings
+export { settings, SettingsSets }

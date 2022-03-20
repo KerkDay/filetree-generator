@@ -20,3 +20,4 @@ const asciiSymbols: AsciiSymbolsSets = {
 }
 
 export default asciiSymbols
+export { asciiSymbols, AsciiSymbolsSets }

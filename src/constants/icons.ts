@@ -47,4 +47,5 @@ const icons: IconSets = {
     },
 };
 
-export default icons;
+export default icons
+export { icons, IconSets }

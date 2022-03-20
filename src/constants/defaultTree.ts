@@ -1,30 +1,23 @@
 interface FileTree {
     [index: number]: {
-        icon?: string,
-        name?: string,
-        comment?: string,
+        tabs?: number
+        icon?: string
+        name?: string
+        comment?: string
         children?: FileTree[]
     }
 }
 
 const defaultTree = [
-    {
-        name: "Project",
-        children: [
-            { name: ".gitignore" },
-            { name: "README.md" },
-            { name: "index.php", icon: "🏠" },
-            { name: "spaghetti.png" },
-            { 
-                name: "file", 
-                comment: "An example comment"
-            }
-        ]
-    },
+    { name: "Project" },
+    { tabs: 1, name: ".gitignore" },
+    { tabs: 1, name: "README.md" },
+    { tabs: 1, name: "index.php", icon: "🏠" },
+    { tabs: 1, name: "spaghetti.png" },
+    { tabs: 1, name: "file", comment: "An example comment" },
     {},
-    {
-        comment: "Comments can be added to new lines"
-    }
+    { comment: "Comments can be added to new lines" }
 ]
 
 export default defaultTree
+export { defaultTree, FileTree }

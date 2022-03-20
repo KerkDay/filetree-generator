@@ -1,7 +1,7 @@
-import asciiSymbols from "./asciiSymbols"
-import defaultTree from "./defaultTree"
-import icons from "./icons"
-import settings from "./settings"
-import themes from "./themes"
+import { asciiSymbols, AsciiSymbolsSets } from "./asciiSymbols"
+import { defaultTree, FileTree } from "./defaultTree"
+import { icons, IconSets } from "./icons"
+import { settings, SettingsSets } from "./settings"
+import { themes, ThemeSets } from "./themes"
 
-export {asciiSymbols, defaultTree, icons, settings, themes}
+export {asciiSymbols, AsciiSymbolsSets, defaultTree, FileTree, icons, IconSets, settings, SettingsSets, themes, ThemeSets}
