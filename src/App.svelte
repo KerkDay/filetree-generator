@@ -1,10 +1,9 @@
 <script lang="ts">
-	import {onMount} from "svelte"
-	import {debounce} from "./scripts"
+	import { onMount } from "svelte"
+	import { setup } from "./scripts"
 
 	onMount(() => {
-		document.addEventListener("keydown", event => {
-		})
+		setup()
 	})
 </script>
 
