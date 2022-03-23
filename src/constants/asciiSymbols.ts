@@ -20,4 +20,5 @@ const asciiSymbols: AsciiSymbolsSets = {
 }
 
 export default asciiSymbols
-export { asciiSymbols, AsciiSymbolsSets }
+export { asciiSymbols }
+export type {AsciiSymbolsSets}

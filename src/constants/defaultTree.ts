@@ -20,4 +20,5 @@ const defaultTree = [
 ]
 
 export default defaultTree
-export { defaultTree, FileTree }
+export { defaultTree }
+export type { FileTree }

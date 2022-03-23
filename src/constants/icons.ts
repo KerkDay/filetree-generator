@@ -48,4 +48,5 @@ const icons: IconSets = {
 };
 
 export default icons
-export { icons, IconSets }
+export { icons }
+export type { IconSets }

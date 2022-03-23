@@ -10,4 +10,5 @@ const themes: ThemeSets = {
 }
 
 export default themes
-export { themes, ThemeSets }
+export { themes }
+export type { ThemeSets }

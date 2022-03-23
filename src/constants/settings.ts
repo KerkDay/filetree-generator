@@ -51,4 +51,5 @@ const settings: SettingsSets = {
 }
 
 export default settings
-export { settings, SettingsSets }
+export { settings }
+export type { SettingsSets }
