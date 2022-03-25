@@ -1,5 +1,5 @@
 import { asciiSymbols, AsciiSymbolsSets } from "./asciiSymbols"
-import { defaultTree, FileTree } from "./defaultTree"
+import { defaultTree, FileTree } from "./trees"
 import { icons, IconSets } from "./icons"
 import { settings, SettingsSets } from "./settings"
 import { themes, ThemeSets } from "./themes"
