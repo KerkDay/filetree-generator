@@ -40,7 +40,12 @@ export default {
 	},
 	plugins: [
 		svelte({
-			preprocess: sveltePreprocess({ sourceMap: !production }),
+			preprocess: sveltePreprocess({ 
+				sourceMap: !production,
+				sass: {
+					prependData: `@import 'src/editor-themes.sass';`
+				}
+			}),
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production
