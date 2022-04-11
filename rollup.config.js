@@ -6,6 +6,7 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
+import sass from "rollup-plugin-sass";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -41,19 +42,15 @@ export default {
 	plugins: [
 		svelte({
 			preprocess: sveltePreprocess({ 
-				sourceMap: !production,
-				sass: {
-					prependData: `@import 'src/editor-themes.sass';`
-				}
+				sourceMap: !production
 			}),
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production
 			}
 		}),
-		// we'll extract any component CSS out into
-		// a separate file - better for performance
 		css({ output: 'bundle.css' }),
+		sass({ output: 'public/build/global.css' }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In

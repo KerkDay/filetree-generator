@@ -8,6 +8,7 @@ specifiers:
   rollup: ^2.70.0
   rollup-plugin-css-only: ^3.1.0
   rollup-plugin-livereload: ^2.0.5
+  rollup-plugin-sass: ^1.2.10
   rollup-plugin-svelte: ^7.1.0
   rollup-plugin-terser: ^7.0.2
   sass: ^1.49.9
@@ -17,9 +18,11 @@ specifiers:
   svelte-preprocess: ^4.10.4
   tslib: ^2.3.1
   typescript: ^4.6.2
+  unicode-emoji: ^2.3.0
 
 dependencies:
   sirv-cli: 2.0.2
+  unicode-emoji: 2.3.0
 
 devDependencies:
   '@rollup/plugin-commonjs': 17.1.0_rollup@2.70.0
@@ -29,6 +32,7 @@ devDependencies:
   rollup: 2.70.0
   rollup-plugin-css-only: 3.1.0_rollup@2.70.0
   rollup-plugin-livereload: 2.0.5
+  rollup-plugin-sass: 1.2.10_rollup@2.70.0
   rollup-plugin-svelte: 7.1.0_rollup@2.70.0+svelte@3.46.4
   rollup-plugin-terser: 7.0.2_rollup@2.70.0
   sass: 1.49.9
@@ -677,6 +681,17 @@ packages:
       - utf-8-validate
     dev: true
 
+  /rollup-plugin-sass/1.2.10_rollup@2.70.0:
+    resolution: {integrity: sha512-3foFjnPhGYSC08S5ODecZsN5K86eqWmgPy6y6+CZ7kzUTsKcWhS7aoKMbKAUgu799vlNp4HVVsbbYBL/Lj0y6g==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.70.0
+      resolve: 1.22.0
+      sass: 1.49.9
+    transitivePeerDependencies:
+      - rollup
+    dev: true
+
   /rollup-plugin-svelte/7.1.0_rollup@2.70.0+svelte@3.46.4:
     resolution: {integrity: sha512-vopCUq3G+25sKjwF5VilIbiY6KCuMNHP1PFvx2Vr3REBNMDllKHFZN2B9jwwC+MqNc3UPKkjXnceLPEjTjXGXg==}
     engines: {node: '>=10'}
@@ -971,6 +986,10 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
+
+  /unicode-emoji/2.3.0:
+    resolution: {integrity: sha512-XfgzxY9hUAXlZdkR8X+QdeQ4yV9gUs6qVYDncBiJiCEJ74mhVxEEdXz2slZU9ahQGUscKO1Aqo6PGLTu4Cgb7g==}
+    dev: false
 
   /wrappy/1.0.2:
     resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
